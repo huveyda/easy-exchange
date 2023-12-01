@@ -1,0 +1,79 @@
+/* banner.component.css */
+.banner-row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Optional: Set a maximum width for the content */
+  margin: 0 auto; /* Optional: Center the content horizontally */
+}
+
+.text-container {
+  flex: 1; /* Take up remaining space */
+  padding-left: 100px;
+  margin-top: 32px;
+}
+
+.image-container {
+  position: relative;
+  margin-right: 100px; /* Adjust the margin as needed for spacing between text and image */
+  margin-top: 25px;
+}
+
+.circle-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -52%);
+  width: 366px; /* Adjust the size of the circle */
+  height: 366px; /* Adjust the size of the circle */
+  background-color: #eef3f4; /* Set the background color to gray */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Additional styling for <h1> and <p> tags */
+.title-description {
+  font-size: 32px;
+  color: #354e57; /* Set the color for the first description */
+  line-height: 1.2;
+}
+.highlight-text {
+  color: #87c241; /* Set the color for the highlighted text */
+}
+.text-description {
+  font-size: 12px;
+  color: #354e57; /* Set the color for the paragraphs */
+  margin-top: 20px; /* Adjust margin from the top */
+  line-height: 1.4;
+}
+
+.fund-button {
+  margin-top: 25px;
+  background-color: #fff; /* Set the button's background color to green */
+  color: #87c241; /* Set the button text color to green */
+  border: 1.5px solid #87c241; /* Set the button border color to green */
+  padding: 7px 25px; /* Add padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.fund-button:hover {
+  background-color: #87c241; /* Set the button's background color on hover to a darker green */
+  color: #fff; /* Set the button text color on hover to white */
+}
+
+img {
+  width: 105%; /* Make the image fill the container */
+}
+
+/* Additional styling for <h2> and <p> tags */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
