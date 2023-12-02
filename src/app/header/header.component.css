@@ -25,6 +25,7 @@ img {
   margin-right: 100px; /* Adjust the space from right as needed */
   padding-left: 20px; /* Adjust the left padding as needed */
   padding-right: 20px;
+  font-family: "MyFont";
 }
 
 /* Optional: Add additional styles for button hover and focus states */
@@ -33,4 +34,5 @@ img {
   color: #87c241; /* Change color on hover or focus */
   font-weight: bold; /* Make the text bold on hover or focus */
   outline: none;
+  font-family: "MyFont";
 }

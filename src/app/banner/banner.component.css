@@ -36,6 +36,7 @@
   font-size: 32px;
   color: #354e57; /* Set the color for the first description */
   line-height: 1.2;
+  font-family: "MyFont";
 }
 .highlight-text {
   color: #87c241; /* Set the color for the highlighted text */
@@ -45,6 +46,7 @@
   color: #354e57; /* Set the color for the paragraphs */
   margin-top: 20px; /* Adjust margin from the top */
   line-height: 1.4;
+  font-family: "MyFont";
 }
 
 .fund-button {
@@ -61,6 +63,7 @@
   cursor: pointer;
   border-radius: 5px; /* Add border-radius for rounded corners */
   transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  font-family: "MyFont";
 }
 
 .fund-button:hover {
