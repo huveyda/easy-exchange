@@ -26,6 +26,7 @@ img {
   padding-left: 20px; /* Adjust the left padding as needed */
   padding-right: 20px;
   font-family: "MyFont";
+  letter-spacing: 1px;
 }
 
 /* Optional: Add additional styles for button hover and focus states */
@@ -35,4 +36,153 @@ img {
   font-weight: bold; /* Make the text bold on hover or focus */
   outline: none;
   font-family: "MyFont";
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .modal,
+input[type="checkbox"]:checked ~ .modal-background {
+  display: block;
+}
+.modal-background {
+  width: calc(100% - 40px); /* Adjust the spacing by changing the value */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9998;
+  margin: 0 20px; /* Sets both left and right margins */
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  width: 400px;
+  height: 420px;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 9999;
+  border-radius: 40px;
+  overflow: auto;
+}
+
+.modal > p {
+  padding: 15px;
+  margin: 0;
+}
+
+.modal-logo {
+  position: absolute;
+  top: 10%;
+
+  transform: translate(-10%, -50%);
+}
+
+.modal-logo img {
+  width: 70%; /* or any other value that suits your design */
+  height: auto;
+}
+
+.border {
+  margin: 0 40px; /* Adjust the left and right margin as needed */
+  border: 2px solid #87c241;
+  border-radius: 10px;
+}
+
+.modal-header {
+  padding-left: 20px; /* Adjust the left padding as needed */
+  color: #63a022;
+  font-family: "MyFont";
+  font-size: 10px;
+  margin-top: 24px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+div {
+  text-align: center;
+  margin: 0 20px;
+}
+
+input {
+  width: 90%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 5px solid #87c241; /* Add a solid border with a green color */
+  border-right: none;
+  border-top: none;
+  border-bottom: none; /* Remove the right border */
+  color: #354e57;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+input::placeholder {
+  color: #d2d3d5; /* Change the text color of the placeholder */
+  font-family: "MyFont";
+  letter-spacing: 1px;
+}
+input:focus {
+  outline-color: #87c241; /* Change the border color when the input is in focus */
+}
+
+.text-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+div span {
+  color: #848f93; /* Change the color to your preferred value */
+  font-size: 14px; /* Adjust the font size as needed */
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  font-family: "MyFont";
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+.submit-button {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 30px 10px;
+  background-color: #87c241;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none; /* Remove the border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "MyFont";
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.submit-button:hover {
+  background-color: #63a022; /* Change the color on hover as needed */
 }
