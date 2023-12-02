@@ -7,11 +7,6 @@
   margin: 10px;
   border-radius: 20px;
   overflow: hidden;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.custom-card:hover {
-  transform: scale(1.05);
 }
 
 .header {
@@ -34,6 +29,7 @@ h3 {
   font-size: 16px;
   color: #63a022;
   margin-bottom: 12px;
+  letter-spacing: 1px;
 }
 
 .content {
@@ -48,4 +44,5 @@ p {
   line-height: 1.4;
   white-space: pre-line;
   color: #354e57;
+  letter-spacing: 1px;
 }

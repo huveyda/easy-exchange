@@ -1,0 +1,57 @@
+<div class="convert-container">
+  <div class="convert-title">
+    <img src="../../assets/images/convert-icon.svg" alt="convert-icon" />
+    <h3>Convert Fund</h3>
+  </div>
+
+  <div class="input-container">
+    <div class="input-area">
+      <label for="amount-label">Amount</label>
+      <div class="amount-div">
+        <input
+          type="number"
+          id="amount"
+          class="amount"
+          placeholder="Enter amount"
+          (keyup)="onKey($event)"
+        />
+      </div>
+    </div>
+
+    <div class="input-area">
+      <label for="from-label">From</label>
+      <div class="from-div-select">
+        <select #currenciesFrom (change)="onSelectFrom(currenciesFrom.value)">
+          <option value="USD">USD - US Dollar</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="EUR">EUR - Euro</option>
+        </select>
+      </div>
+      <div class="image-div">
+        <img
+          src="../../assets/images/exchance-icon.svg"
+          alt="exchange-icon"
+          class="currency-icon"
+        />
+      </div>
+
+      <div class="input-area">
+        <label for="to-label">To</label>
+        <div class="to-div-select">
+          <select #currenciesTo (change)="onSelectTo(currenciesTo.value)">
+            <option value="GBP">GBP - British Pound</option>
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="calculator-area">
+    <div class="exchange">=Hesaplamalar</div>
+    <div class="button-container">
+      <button class="convert-button" (click)="convert()">Convert</button>
+    </div>
+  </div>
+</div>

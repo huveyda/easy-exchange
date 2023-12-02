@@ -15,8 +15,8 @@
 
 .image-container {
   position: relative;
-  margin-right: 100px; /* Adjust the margin as needed for spacing between text and image */
-  margin-top: 25px;
+  margin-right: 200px; /* Adjust the margin as needed for spacing between text and image */
+  margin-top: 32px;
 }
 
 .circle-background {
@@ -24,8 +24,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-55%, -52%);
-  width: 366px; /* Adjust the size of the circle */
-  height: 366px; /* Adjust the size of the circle */
+  width: 460px; /* Adjust the size of the circle */
+  height: 460px; /* Adjust the size of the circle */
   background-color: #eef3f4; /* Set the background color to gray */
   border-radius: 50%;
   z-index: -1;
@@ -33,10 +33,11 @@
 
 /* Additional styling for <h1> and <p> tags */
 .title-description {
-  font-size: 32px;
+  font-size: 36px;
   color: #354e57; /* Set the color for the first description */
   line-height: 1.2;
   font-family: "MyFont";
+  letter-spacing: 1px;
 }
 .highlight-text {
   color: #87c241; /* Set the color for the highlighted text */
@@ -47,6 +48,7 @@
   margin-top: 20px; /* Adjust margin from the top */
   line-height: 1.4;
   font-family: "MyFont";
+  letter-spacing: 1px;
 }
 
 .fund-button {
@@ -72,7 +74,7 @@
 }
 
 img {
-  width: 105%; /* Make the image fill the container */
+  width: 120%; /* Make the image fill the container */
 }
 
 /* Additional styling for <h2> and <p> tags */
