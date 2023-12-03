@@ -1,0 +1,138 @@
+/* banner.component.css */
+.banner-row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Optional: Set a maximum width for the content */
+  margin: 0 auto; /* Optional: Center the content horizontally */
+}
+
+.text-container {
+  flex: 1; /* Take up remaining space */
+  margin-left: 132px;
+  margin-top: 56px;
+}
+
+.image-container {
+  position: relative;
+  margin-right: 220px; /* Adjust the margin as needed for spacing between text and image */
+  margin-top: 48px;
+}
+
+.circle-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 20px;
+  margin-top: 16px;
+  transform: translate(-53%, -56%);
+  width: 450px; /* Adjust the size of the circle */
+  height: 450px; /* Adjust the size of the circle */
+  background-color: #f5f5f5; /* Set the background color to gray */
+  border-radius: 50%;
+  z-index: -5;
+}
+
+/* Additional styling for <h1> and <p> tags */
+.title-description {
+  font-size: 38px;
+  color: #354e57; /* Set the color for the first description */
+  line-height: 1.2;
+  font-family: "MyFontBold";
+  letter-spacing: 1px;
+}
+.highlight-text {
+  color: #87c241; /* Set the color for the highlighted text */
+}
+.text-description {
+  font-size: 14px;
+  color: #354e57; /* Set the color for the paragraphs */
+  margin-top: 20px; /* Adjust margin from the top */
+  line-height: 1.6;
+  font-family: "MyFont";
+}
+
+.fund-button {
+  margin-top: 25px;
+  background-color: #fff; /* Set the button's background color to green */
+  color: #87c241; /* Set the button text color to green */
+  border: 1.6px solid #87c241; /* Set the button border color to green */
+  padding: 8px 16px; /* Add padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  font-family: "MyFontBold";
+  letter-spacing: 1px;
+}
+
+.fund-button:hover {
+  background-color: #87c241; /* Set the button's background color on hover to a darker green */
+  color: #fff; /* Set the button text color on hover to white */
+}
+
+img {
+  width: 128%; /* Make the image fill the container */
+}
+
+/* Additional styling for <h2> and <p> tags */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-description {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .text-description {
+    font-size: 16px;
+    margin-left: 56px;
+  }
+
+  .fund-button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    margin-top: 15px; /* Adjust spacing for smaller screens */
+  }
+
+  .banner-row-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center;
+    max-width: 100%; /* Adjust to fit the full width of the screen */
+    margin: 0 auto;
+  }
+
+  .text-container {
+    margin: 20px; /* Adjust spacing for smaller screens */
+  }
+
+  .image-container {
+    margin: 40px; /* Adjust spacing for smaller screens */
+  }
+
+  .circle-background {
+    width: 300px; /* Make the circle fill the width of the container */
+    height: 300px; /* Adjust the size of the circle for smaller screens */
+    transform: translate(-60%, -60%);
+    margin-left: 30px;
+    margin-top: 16px;
+  }
+
+  img {
+    width: 85%; /* Make the image fill the container */
+    margin-left: 48px;
+  }
+}

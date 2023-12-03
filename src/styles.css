@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: MyFont;
+  src: url("./assets/Proxima\ Nova\ Font.otf") format(truetype);
+}
+
+@font-face {
+  font-family: MyFontBold;
+  src: url("./assets/FontsFree-Net-Proxima-Nova-Bold.otf") format(truetype);
+}

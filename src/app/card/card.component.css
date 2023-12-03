@@ -1,0 +1,50 @@
+.custom-card {
+  width: 210px;
+  height: 360px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-top: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column; /* Adjust to a column layout */
+  align-items: center;
+  font-family: "MyFont";
+}
+
+.card-image {
+  max-width: 84%;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add margin below the image */
+  margin-top: 12px;
+}
+
+h3 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #63a022;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  font-family: "MyFontBold";
+}
+
+.content {
+  text-align: center;
+  margin: 8px 6px; /* Add margin from right to left */
+  font-family: "MyFont";
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-line;
+  color: #354e57;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
