@@ -97,7 +97,6 @@ input[type="checkbox"]:checked ~ .modal-background {
 .modal-logo {
   position: absolute;
   top: 10%;
-
   transform: translate(-10%, -50%);
 }
 
@@ -206,14 +205,13 @@ div span {
   }
 
   .modal-background {
-    max-width: 400px; /* Adjust the spacing for smaller screens */
-    margin: 0; /* Remove left and right margins for smaller screens */
+    max-width: 800px; /* Adjust the spacing for smaller screens */
   }
 
   .modal {
     width: 90%; /* Adjust the width for smaller screens */
     max-width: 300px; /* Set a maximum width for larger screens */
-    margin: 80px 40px;
+    margin: 80px 80px;
   }
 
   .modal-logo img {
