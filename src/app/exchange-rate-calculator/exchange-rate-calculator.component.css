@@ -138,3 +138,17 @@ label {
 .convert-button:hover {
   background-color: #6b9e37; /* Adjust the color as needed */
 }
+
+h2 {
+  text-align: left;
+  color: #848f93;
+  font-family: "MyFont";
+  font-size: 32px;
+}
+
+h1 {
+  text-align: left;
+  color: #354e57;
+  font-family: "MyFont";
+  font-size: 36px;
+}

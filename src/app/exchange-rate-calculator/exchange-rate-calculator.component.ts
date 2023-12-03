@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-exchange-rate-calculator',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, CommonModule],
   templateUrl: './exchange-rate-calculator.component.html',
   styleUrl: './exchange-rate-calculator.component.css',
 })
@@ -44,5 +45,6 @@ export class ExchangeRateCalculatorComponent implements OnInit {
     }
 
     console.log('clicked', this.rate);
+    console.log(response);
   }
 }
