@@ -26,9 +26,9 @@
       </div>
       <div class="select-container">
         <select #currenciesFrom (change)="onSelectFrom(currenciesFrom.value)">
-          <option value="USD">USD - US Dollar</option>
-          <option value="GBP">GBP - British Pound</option>
-          <option value="EUR">EUR - Euro</option>
+          <option value="USD">🇺🇸 - USD - US Dollar</option>
+          <option value="GBP">🇬🇧 - GBP - British Pound</option>
+          <option value="EUR">🇪🇺 - EUR - Euro</option>
         </select>
       </div>
     </div>
@@ -49,9 +49,9 @@
       </div>
       <div class="select-container">
         <select #currenciesTo (change)="onSelectTo(currenciesTo.value)">
-          <option value="GBP">GBP - British Pound</option>
-          <option value="USD">USD - US Dollar</option>
-          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">🇬🇧 - GBP - British Pound</option>
+          <option value="USD">🇺🇸 - USD - US Dollar</option>
+          <option value="EUR">🇪🇺 - EUR - Euro</option>
         </select>
       </div>
     </div>
@@ -60,8 +60,8 @@
   <div class="calculator-area">
     <div *ngIf="rate > 0" class="result">
       <h2>{{ amount }} {{ formattedFrom }} =</h2>
-      <h1>{{ rate }} {{ formattedTo }}</h1>
-      <h2>1 {{ from }} = {{ rate / amount }} {{ to }}</h2>
+      <h1>{{ rate.toFixed(5) }} {{ formattedTo }}</h1>
+      <h2>1 {{ from }} = {{ (rate / amount).toFixed(5) }} {{ to }}</h2>
       <h2>1 {{ to }} = {{ (1 / (rate / amount)).toFixed(5) }} {{ from }}</h2>
     </div>
     <div class="exchange"></div>
