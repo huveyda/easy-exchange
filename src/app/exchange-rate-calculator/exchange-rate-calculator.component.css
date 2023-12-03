@@ -135,7 +135,7 @@ label {
 
 /* Change background color on hover */
 .convert-button:hover {
-  background-color: #6b9e37; /* Adjust the color as needed */
+  background-color: #6b9e37;
 }
 
 h2 {
@@ -159,11 +159,11 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .convert-container {
-    padding: 40px; /* Restore padding for larger screens */
+    padding: 40px;
   }
 
   .input-container {
-    flex-direction: row; /* Display as a row on larger screens */
+    flex-direction: row;
   }
 
   .convert-title {
@@ -173,7 +173,7 @@ h1 {
     letter-spacing: 1px;
     color: #354e57;
     font-size: 18px;
-    text-align: center; /* Center text */
+    text-align: center;
   }
 
   .input-container {
@@ -185,11 +185,11 @@ h1 {
 
   .amount {
     width: 280px;
-    margin: 10px 0; /* Adjust margin for spacing */
+    margin: 10px 0;
   }
 
   .select-container {
-    width: 280px; /* Make select full width */
+    width: 280px;
   }
 
   .currency-icon {
@@ -201,13 +201,13 @@ h1 {
   .exchange,
   .convert-button,
   .result {
-    margin: 10px 20px; /* Adjust margin for spacing */
+    margin: 10px 20px;
   }
 
   .calculator-area {
-    flex-direction: column; /* Display as a column on smaller screens */
+    flex-direction: column;
     padding: 10px;
     margin-top: 20px;
-    margin-bottom: 20px; /* Adjust margin for spacing */
+    margin-bottom: 20px;
   }
 }

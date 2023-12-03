@@ -4,23 +4,23 @@
   height: 540px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Adjust this based on your spacing preference */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 24px; /* Add padding to create space between cards and container edges */
+  padding: 0 24px;
   margin-top: 40px;
 }
 
 .first {
-  margin-left: 88px; /* Push the first card to the left by using auto margin on the right */
+  margin-left: 88px;
 }
 
 .last {
-  margin-right: 88px; /* Push the last card to the right by using auto margin on the left */
+  margin-right: 88px;
 }
 
 @media screen and (max-width: 768px) {
   .module-container {
-    width: 400px; /* Restore width for larger screens */
+    width: 400px;
     height: 1320px;
     flex-direction: column;
   }
@@ -28,7 +28,7 @@
   .first,
   .middle,
   .last {
-    margin-top: 20px; /* Add margin between cards on larger screens */
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 40px;
     margin-bottom: 20px;
