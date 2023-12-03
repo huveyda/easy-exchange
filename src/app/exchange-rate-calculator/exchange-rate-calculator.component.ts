@@ -10,15 +10,13 @@ import { CommonModule, DecimalPipe } from '@angular/common';
   styleUrl: './exchange-rate-calculator.component.css',
 })
 export class ExchangeRateCalculatorComponent implements OnInit {
-  from = 'USD';
-  to = 'GBP';
+  from = '';
+  to = '';
+  formattedFrom = '';
+  formattedTo = '';
   amount = 0;
   rate = 0;
-
   data: any;
-
-  formattedFrom = this.formatCurrencyString(this.from);
-  formattedTo = this.formatCurrencyString(this.to);
 
   constructor(private http: HttpClient) {}
 
@@ -36,17 +34,13 @@ export class ExchangeRateCalculatorComponent implements OnInit {
   }
 
   formatCurrencyString(currencyCode: string) {
-    switch (currencyCode) {
-      case 'USD':
-        return 'US Dollars';
-        break;
-      case 'EUR':
-        return 'Euro';
-        break;
-      case 'GBP':
-        return 'British Pounds';
-      default:
-        return currencyCode;
+    console.log('Currency Code:', currencyCode);
+    if (currencyCode === 'USD') {
+      return 'US Dollars';
+    } else if (currencyCode === 'EUR') {
+      return 'Euro';
+    } else {
+      return 'British Pounds';
     }
   }
 
@@ -73,12 +67,13 @@ export class ExchangeRateCalculatorComponent implements OnInit {
     const response: any = await this.http.get(url).toPromise();
     if (response && response.result === 'success') {
       this.rate = response.conversion_rate * this.amount;
+      this.formattedFrom = this.formatCurrencyString(this.from);
+      this.formattedTo = this.formatCurrencyString(this.to);
     } else {
       console.log('Error');
     }
 
-    console.log('clicked', this.rate);
-    console.log(response);
-    console.log('formatted from: ', this.formattedFrom);
+    console.log(this.formattedFrom);
+    console.log(this.formattedTo);
   }
 }

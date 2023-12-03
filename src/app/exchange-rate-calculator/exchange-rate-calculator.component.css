@@ -5,7 +5,7 @@
 .convert-title {
   display: flex;
   align-items: center;
-  font-family: "MyFont";
+  font-family: "MyFontBold";
   letter-spacing: 1px;
   color: #354e57;
   font-size: 18px;
@@ -37,7 +37,7 @@
 
 label {
   color: #354e57;
-  font-family: "MyFont";
+  font-family: "MyFontBold";
   font-weight: 600;
   font-size: 16px;
 }
@@ -62,7 +62,7 @@ label {
 
 .select-container {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   width: 240px; /* Set the width as needed */
   margin-top: 10px;
   border: 1px solid #354e57;
@@ -107,14 +107,14 @@ label {
 .calculator-area {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 100px;
 }
 
 .exchange {
-  font-family: "MyFont";
+  font-family: "MyFontBold";
   letter-spacing: 1px;
   color: #354e57;
   margin-left: 90px;
@@ -123,16 +123,14 @@ label {
 .convert-button {
   background-color: #87c241;
   color: white;
-  font-family: "MyFont";
+  font-family: "MyFontBold";
   border: none;
   border-radius: 6px;
   padding: 8px 48px;
   font-weight: 700;
   font-size: 16px;
-  letter-spacing: 1px;
-  margin-right: 52px;
   transition: background-color 0.3s;
-  margin-right: 90px;
+  margin-right: 96px;
 }
 
 /* Change background color on hover */
@@ -143,18 +141,23 @@ label {
 h2 {
   text-align: left;
   color: #848f93;
-  font-family: "MyFont";
+  font-family: "MyFontBold";
   font-size: 32px;
 }
 
 h1 {
   text-align: left;
   color: #354e57;
-  font-family: "MyFont";
+  font-family: "MyFontBold";
   font-size: 36px;
 }
 
-@media screen and (max-width: 600px) {
+.result {
+  flex-grow: 1;
+  margin-left: 96px;
+}
+
+@media screen and (max-width: 768px) {
   .convert-container {
     padding: 40px; /* Restore padding for larger screens */
   }
@@ -166,7 +169,7 @@ h1 {
   .convert-title {
     flex-direction: row;
     display: flex;
-    font-family: "MyFont";
+    font-family: "MyFontBold";
     letter-spacing: 1px;
     color: #354e57;
     font-size: 18px;
@@ -198,7 +201,7 @@ h1 {
   .exchange,
   .convert-button,
   .result {
-    margin: 10px 0; /* Adjust margin for spacing */
+    margin: 10px 20px; /* Adjust margin for spacing */
   }
 
   .calculator-area {

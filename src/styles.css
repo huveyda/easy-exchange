@@ -3,3 +3,8 @@
   font-family: MyFont;
   src: url("./assets/Proxima\ Nova\ Font.otf") format(truetype);
 }
+
+@font-face {
+  font-family: MyFontBold;
+  src: url("./assets/FontsFree-Net-Proxima-Nova-Bold.otf") format(truetype);
+}

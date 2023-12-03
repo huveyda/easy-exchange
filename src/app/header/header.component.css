@@ -186,7 +186,7 @@ div span {
   background-color: #63a022; /* Change the color on hover as needed */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .row-container {
     display: flex;
     flex-direction: column; /* Change to column layout on smaller screens */
