@@ -5,4 +5,4 @@ app.use(express.static(__dirname + "/dist/easy-exchange"));
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname + "/dist/easy-exchange/index.html"));
 });
-app.listen(8080);
+app.listen(4200);
