@@ -86,3 +86,56 @@ h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .title-description {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .text-description {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .fund-button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    margin-top: 15px; /* Adjust spacing for smaller screens */
+  }
+}
+
+.banner-row-container {
+  display: flex;
+  flex-direction: column; /* Change to column layout on smaller screens */
+  align-items: center;
+  max-width: 100%; /* Adjust to fit the full width of the screen */
+  margin: 0 auto;
+}
+
+.text-container {
+  margin: 20px; /* Adjust spacing for smaller screens */
+}
+
+.image-container {
+  margin: 40px; /* Adjust spacing for smaller screens */
+}
+
+.circle-background {
+  width: 300px; /* Make the circle fill the width of the container */
+  height: 300px; /* Adjust the size of the circle for smaller screens */
+  transform: translate(-60%, -60%);
+  margin-left: 30px;
+  margin-top: 16px;
+}
+
+.title-description {
+  font-size: 24px; /* Adjust the font size for smaller screens */
+}
+
+.text-description {
+  font-size: 14px; /* Adjust the font size for smaller screens */
+  margin-top: 10px; /* Adjust spacing for smaller screens */
+}
+
+img {
+  width: 85%; /* Make the image fill the container */
+  margin-left: 48px;
+}
