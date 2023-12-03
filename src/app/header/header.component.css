@@ -186,3 +186,62 @@ div span {
 .submit-button:hover {
   background-color: #63a022; /* Change the color on hover as needed */
 }
+
+@media screen and (max-width: 600px) {
+  .row-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  img {
+    margin: 10px 40px; /* Adjust the margin for spacing */
+    width: 50%; /* Make the image fill the width of the container */
+    max-width: 200px; /* Set a maximum width for larger screens */
+  }
+
+  .button-as-link {
+    margin: 10px 0; /* Adjust the margin for spacing */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .modal-background {
+    max-width: 400px; /* Adjust the spacing for smaller screens */
+    margin: 0; /* Remove left and right margins for smaller screens */
+  }
+
+  .modal {
+    width: 90%; /* Adjust the width for smaller screens */
+    max-width: 300px; /* Set a maximum width for larger screens */
+    margin: 80px 40px;
+  }
+
+  .modal-logo img {
+    width: 100%; /* Make the logo image fill the width of the container */
+  }
+
+  .modal-header {
+    padding-left: 20px; /* Adjust the left padding as needed */
+    color: #63a022;
+    font-family: "MyFont";
+    font-size: 10px;
+    margin-top: 24px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .border {
+    margin: 0px 40px; /* Adjust the left and right margin as needed */
+    border: 2px solid #87c241;
+    border-radius: 10px;
+  }
+
+  input {
+    width: 100%; /* Make the input fields fill the width of the container */
+  }
+
+  .submit-button {
+    width: 80%; /* Make the button fill the width of the container */
+  }
+}
