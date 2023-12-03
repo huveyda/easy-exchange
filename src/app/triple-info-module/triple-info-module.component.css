@@ -17,3 +17,20 @@
 .last {
   margin-right: 88px; /* Push the last card to the right by using auto margin on the left */
 }
+
+@media screen and (max-width: 600px) {
+  .module-container {
+    width: 400px; /* Restore width for larger screens */
+    height: 1320px;
+    flex-direction: column;
+  }
+
+  .first,
+  .middle,
+  .last {
+    margin-top: 20px; /* Add margin between cards on larger screens */
+    margin-left: 10px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+}
