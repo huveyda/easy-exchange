@@ -60,7 +60,7 @@
   <div class="calculator-area">
     <div *ngIf="rate > 0" class="result">
       <h2>{{ amount }} {{ formattedFrom }} =</h2>
-      <h1>{{ rate }} {{ formattedTo }}</h1>
+      <h1>{{ rate.toFixed(5) }} {{ formattedTo }}</h1>
       <h2>1 {{ from }} = {{ (rate / amount).toFixed(5) }} {{ to }}</h2>
       <h2>1 {{ to }} = {{ (1 / (rate / amount)).toFixed(5) }} {{ from }}</h2>
     </div>
