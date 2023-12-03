@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { CommonModule, DecimalPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-exchange-rate-calculator',
@@ -43,21 +43,6 @@ export class ExchangeRateCalculatorComponent implements OnInit {
       return 'British Pounds';
     }
   }
-
-  // getCurrencySymbol(currencyCode: string) {
-  //   switch (currencyCode) {
-  //     case 'USD':
-  //       return '$';
-  //       break;
-  //     case 'EUR':
-  //       return '€';
-  //       break;
-  //     case 'GBP':
-  //       return '£';
-  //     default:
-  //       return currencyCode;
-  //   }
-  // }
 
   async convert() {
     const baseURL = 'https://v6.exchangerate-api.com/v6/';

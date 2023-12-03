@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Optional: Set a maximum width for the content */
-  margin: 0 auto; /* Optional: Center the content horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .text-container {
@@ -15,7 +15,7 @@
 
 .image-container {
   position: relative;
-  margin-right: 220px; /* Adjust the margin as needed for spacing between text and image */
+  margin-right: 220px;
   margin-top: 48px;
 }
 
@@ -26,9 +26,9 @@
   margin-left: 20px;
   margin-top: 16px;
   transform: translate(-53%, -56%);
-  width: 450px; /* Adjust the size of the circle */
-  height: 450px; /* Adjust the size of the circle */
-  background-color: #f5f5f5; /* Set the background color to gray */
+  width: 450px;
+  height: 450px;
+  background-color: #f5f5f5;
   border-radius: 50%;
   z-index: -5;
 }
@@ -36,47 +36,47 @@
 /* Additional styling for <h1> and <p> tags */
 .title-description {
   font-size: 38px;
-  color: #354e57; /* Set the color for the first description */
+  color: #354e57;
   line-height: 1.2;
   font-family: "MyFontBold";
   letter-spacing: 1px;
 }
 .highlight-text {
-  color: #87c241; /* Set the color for the highlighted text */
+  color: #87c241;
 }
 .text-description {
   font-size: 14px;
-  color: #354e57; /* Set the color for the paragraphs */
-  margin-top: 20px; /* Adjust margin from the top */
+  color: #354e57;
+  margin-top: 20px;
   line-height: 1.6;
   font-family: "MyFont";
 }
 
 .fund-button {
   margin-top: 25px;
-  background-color: #fff; /* Set the button's background color to green */
-  color: #87c241; /* Set the button text color to green */
-  border: 1.6px solid #87c241; /* Set the button border color to green */
-  padding: 8px 16px; /* Add padding as needed */
+  background-color: #fff;
+  color: #87c241;
+  border: 1.6px solid #87c241;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 5px; /* Add border-radius for rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
   font-family: "MyFontBold";
   letter-spacing: 1px;
 }
 
 .fund-button:hover {
-  background-color: #87c241; /* Set the button's background color on hover to a darker green */
-  color: #fff; /* Set the button text color on hover to white */
+  background-color: #87c241;
+  color: #fff;
 }
 
 img {
-  width: 128%; /* Make the image fill the container */
+  width: 128%;
 }
 
 /* Additional styling for <h2> and <p> tags */
@@ -94,7 +94,7 @@ h1 {
   }
 
   .title-description {
-    font-size: 24px; /* Adjust font size for smaller screens */
+    font-size: 24px;
   }
 
   .text-description {
@@ -103,36 +103,36 @@ h1 {
   }
 
   .fund-button {
-    padding: 8px 16px; /* Adjust padding for smaller screens */
-    margin-top: 15px; /* Adjust spacing for smaller screens */
+    padding: 8px 16px;
+    margin-top: 15px;
   }
 
   .banner-row-container {
     display: flex;
-    flex-direction: column; /* Change to column layout on smaller screens */
+    flex-direction: column;
     align-items: center;
-    max-width: 100%; /* Adjust to fit the full width of the screen */
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .text-container {
-    margin: 20px; /* Adjust spacing for smaller screens */
+    margin: 20px;
   }
 
   .image-container {
-    margin: 40px; /* Adjust spacing for smaller screens */
+    margin: 40px;
   }
 
   .circle-background {
-    width: 300px; /* Make the circle fill the width of the container */
-    height: 300px; /* Adjust the size of the circle for smaller screens */
+    width: 300px;
+    height: 300px;
     transform: translate(-60%, -60%);
     margin-left: 30px;
     margin-top: 16px;
   }
 
   img {
-    width: 85%; /* Make the image fill the container */
+    width: 85%;
     margin-left: 48px;
   }
 }

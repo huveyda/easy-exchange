@@ -9,48 +9,47 @@ img {
   margin-right: 40px;
   margin-left: 96px;
   margin-top: 80px;
-  width: 240px; /* Adjust the width as needed */
+  width: 240px;
   height: auto;
 }
 
 .button-as-link {
   background: none;
   border: none;
-  color: #354e57; /* Set the desired text color */
-  cursor: pointer; /* Show pointer cursor on hover for better user experience */
+  color: #354e57;
+  cursor: pointer;
   font-family: sans-serif;
   transition: color 0.3s;
   font-size: 12px;
-  margin-top: 80px; /* Adjust the space above the button as needed */
-  margin-right: 96px; /* Adjust the space from right as needed */
-  padding-left: 20px; /* Adjust the left padding as needed */
+  margin-top: 80px;
+  margin-right: 96px;
+  padding-left: 20px;
   padding-right: 20px;
   font-family: "MyFont";
   font-weight: 500;
 }
 
-/* Optional: Add additional styles for button hover and focus states */
 .button-as-link:hover,
 .button-as-link:focus {
-  color: #87c241; /* Change color on hover or focus */
-  font-weight: bold; /* Make the text bold on hover or focus */
+  color: #87c241;
+  font-weight: bold;
   outline: none;
   font-family: "MyFont";
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 input[type="checkbox"] {
@@ -62,7 +61,7 @@ input[type="checkbox"]:checked ~ .modal-background {
   display: block;
 }
 .modal-background {
-  width: calc(100% - 40px); /* Adjust the spacing by changing the value */
+  width: calc(100% - 40px);
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -70,7 +69,7 @@ input[type="checkbox"]:checked ~ .modal-background {
   left: 0;
   display: none;
   z-index: 9998;
-  margin: 0 20px; /* Sets both left and right margins */
+  margin: 0 20px;
 }
 .modal {
   position: fixed;
@@ -101,18 +100,18 @@ input[type="checkbox"]:checked ~ .modal-background {
 }
 
 .modal-logo img {
-  width: 70%; /* or any other value that suits your design */
+  width: 70%;
   height: auto;
 }
 
 .border {
-  margin: 0 40px; /* Adjust the left and right margin as needed */
+  margin: 0 40px;
   border: 2px solid #87c241;
   border-radius: 10px;
 }
 
 .modal-header {
-  padding-left: 20px; /* Adjust the left padding as needed */
+  padding-left: 20px;
   color: #63a022;
   font-family: "MyFont";
   font-size: 10px;
@@ -132,21 +131,21 @@ input {
   padding: 10px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
-  border: 5px solid #87c241; /* Add a solid border with a green color */
+  border: 5px solid #87c241;
   border-right: none;
   border-top: none;
-  border-bottom: none; /* Remove the right border */
+  border-bottom: none;
   color: #354e57;
   transition: border-color 0.3s, color 0.3s;
 }
 
 input::placeholder {
-  color: #d2d3d5; /* Change the text color of the placeholder */
+  color: #d2d3d5;
   font-family: "MyFont";
   letter-spacing: 1px;
 }
 input:focus {
-  outline-color: #87c241; /* Change the border color when the input is in focus */
+  outline-color: #87c241;
 }
 
 .text-button-container {
@@ -156,9 +155,9 @@ input:focus {
 }
 
 div span {
-  color: #848f93; /* Change the color to your preferred value */
-  font-size: 14px; /* Adjust the font size as needed */
-  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  color: #848f93;
+  font-size: 14px;
+  cursor: pointer;
   font-family: "MyFont";
   letter-spacing: 1px;
   font-size: 10px;
@@ -172,7 +171,7 @@ div span {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  border: none; /* Remove the border */
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -183,44 +182,43 @@ div span {
 }
 
 .submit-button:hover {
-  background-color: #63a022; /* Change the color on hover as needed */
+  background-color: #63a022;
 }
 
 @media screen and (max-width: 768px) {
   .row-container {
     display: flex;
-    flex-direction: column; /* Change to column layout on smaller screens */
-    align-items: center; /* Center items in the column */
+    flex-direction: column;
+    align-items: center;
   }
 
   img {
-    margin: 10px 40px; /* Adjust the margin for spacing */
-    width: 50%; /* Make the image fill the width of the container */
-    max-width: 200px; /* Set a maximum width for larger screens */
+    margin: 10px 40px;
+    width: 50%;
+    max-width: 200px;
   }
 
   .button-as-link {
-    margin: 10px 0; /* Adjust the margin for spacing */
-    padding: 10px; /* Adjust padding for smaller screens */
+    margin: 10px 0;
+    padding: 10px;
   }
 
   .modal-background {
-    max-width: 800px; /* Adjust the spacing for smaller screens */
+    max-width: 800px;
   }
 
   .modal {
-    width: 90%; /* Adjust the width for smaller screens */
-    max-width: 300px; /* Set a maximum width for larger screens */
+    width: 90%;
+    max-width: 300px;
     margin: 80px 80px;
   }
 
   .modal-logo img {
-    width: 100%; /* Make the logo image fill the width of the container */
+    width: 100%;
   }
 
   .modal-header {
-    padding-left: 20px; /* Adjust the left padding as needed */
-    color: #63a022;
+    padding-left: 20px;
     font-family: "MyFont";
     font-size: 10px;
     margin-top: 24px;
@@ -230,16 +228,16 @@ div span {
   }
 
   .border {
-    margin: 0px 40px; /* Adjust the left and right margin as needed */
+    margin: 0px 40px;
     border: 2px solid #87c241;
     border-radius: 10px;
   }
 
   input {
-    width: 100%; /* Make the input fields fill the width of the container */
+    width: 100%;
   }
 
   .submit-button {
-    width: 80%; /* Make the button fill the width of the container */
+    width: 80%;
   }
 }
