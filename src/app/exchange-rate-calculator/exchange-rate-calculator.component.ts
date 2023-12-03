@@ -10,8 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './exchange-rate-calculator.component.css',
 })
 export class ExchangeRateCalculatorComponent implements OnInit {
-  from = '';
-  to = '';
+  from = 'USD';
+  to = 'GBP';
   formattedFrom = '';
   formattedTo = '';
   amount = 0;
