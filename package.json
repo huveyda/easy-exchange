@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node dist/easy-exchange/server/main.ts",
+    "start": "node dist/easy-exchange/server.js",
     "build": "ng build --prod&&ng run easy-exchange:server:production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:easy-exchange": "node dist/easy-exchange/server/server.mjs",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm install --prefix server && npm run build --prefix server && npm prune --production --prefix server"
   },
   "private": true,
   "dependencies": {
